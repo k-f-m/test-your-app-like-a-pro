@@ -11,8 +11,12 @@ This repository contains examples of using Playwright with NUnit and .NET in var
 ## Getting Started
 
 1. Clone the repository.
-2. Install the dependencies by running `dotnet restore`.
-3. Run the tests using the following command in the terminal: `dotnet test`.
+2. Make sure you have the [.NET CLI](https://learn.microsoft.com/en-us/dotnet/core/tools/) on your machine.
+3. Install the dependencies by running `dotnet restore`.
+4. Build the project by running `dotnet build` so that `playwright.ps1` is available in the `bin` directory.
+5. Install the required browsers by running `pwsh bin/Debug/net8.0/playwright.ps1`
+     - If `pwsh` is not available, [install PowerShell](https://docs.microsoft.com/powershell/scripting/install/installing-powershell).
+6. Run the tests using the following command in the terminal: `dotnet test`.
 
 ## Contributing
 
