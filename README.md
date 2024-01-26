@@ -7,6 +7,7 @@ This repository contains examples of using Playwright with NUnit and .NET in var
 ## List of Tests
 - **First test**: The headless browser first navigates to a URL and loads the web page, then clicks on the "Read the site in your language" drop-down menu and clicks on the selected language to load the site in the desired language. The test then uses regular expressions to check that the page title and URL contain certain substrings to confirm that the web page has successfully loaded in the desired language.
   - This test demonstrates the use of test hooks, creating locators and performing actions on them, auto-wait, page navigation, and assertions.
+- **Screenshot test**: This test launches a Chromium browser, creates a new browser context and a page within that context, navigates to the specified URL, and takes a screenshot of the page. The screenshot is then saved to the specified file path.
 
 ## Getting Started
 
